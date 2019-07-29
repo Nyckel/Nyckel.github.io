@@ -1,0 +1,151 @@
+#ilot3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#ilot3 h2 {
+    margin: 0;
+    /* padding: 2rem; */
+    padding-bottom: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#zone1 {
+    /* height: 33%; */
+    flex: 2;
+    /* background: rgba(171, 131, 79, 0.5); */
+    /* overflow: auto; */
+    overflow: hidden;
+
+}
+#skillsList {
+    overflow: auto;
+    height: calc(100% - 5rem);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-columns: [sidebar] 1fr [content] 4fr;
+    text-align: center;
+    grid-gap: 1px 0px;
+    /* padding: 0 2rem; */
+    /* padding-right: 8px; */
+    border: 2px solid #AB834F;
+}
+
+#skillsList h3 {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    grid-column: 1;
+    grid-column: sidebar;
+    border: 1px solid #AB834F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1px;
+}
+
+.skill {
+    grid-column: minmax(2, max-content);
+    text-align: center;
+    background: #AB834F;
+    color: whitesmoke;
+}
+.skill:hover {
+    background: #5E482C;
+    cursor: default;
+}
+.skill h4, .skill p {
+    /* display: inline-block; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#ilot3TopWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    padding: 2rem;
+    padding-bottom: 0;
+}
+#zone2 {
+    /* height: 34%; */
+    flex: 1;
+}
+#hobbyList {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#hobbyList div {
+    text-align: center;
+    padding: 5px;
+    flex: 1 1 0;
+}
+#hobbyList div:hover {
+    cursor: default;
+    background: #5E482C;
+    color: white;
+}
+#hobbyList div:hover img{
+    filter: invert(100%);
+}
+#hobbyList div:hover p:last-child {
+    color: white;
+}
+#hobbyList div img {
+    width: 32px;
+}
+#hobbyList div p {
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+#hobbyList div p:last-child {
+    color: lightslategray;
+    font-weight: normal;
+    font-style: italic;
+}
+
+#zone3 {
+    background: url('../img/back3.jpg') no-repeat center center ;
+    background-size: cover;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#usefulZone {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border: 2px solid white;
+    background: rgba(0,0,0,0.4);
+}
+#usefulZone h1 {
+    margin: 0; 
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+
+}
+
+#linkList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+}
+#linkList a {
+    text-decoration: none;
+    color: white;
+}
