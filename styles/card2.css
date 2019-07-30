@@ -6,7 +6,7 @@
 }
 
 #placeholderPt1 {
-    background: url('../img/back2.jpg') no-repeat center center ;
+    background: url('../img/back2_3.jpg') no-repeat center center ;
     background-size: cover;
     height: 43%; /* In placeholder div -> 30% of 100% <=> 43% of 70% */
     display: flex;
